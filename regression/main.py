@@ -32,7 +32,7 @@ def poly_desc(W, b):
     return result
 
 
-def get_batch(batch_size=32):
+def get_batch(batch_size=1000):
     """Builds a batch i.e. (x, f(x)) pair."""
     random = torch.randn(batch_size)
     x = make_features(random)
